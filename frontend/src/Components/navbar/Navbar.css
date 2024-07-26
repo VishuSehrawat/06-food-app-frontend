@@ -39,3 +39,15 @@
     padding-bottom: 2px;
     border-bottom: 1.5px solid tomato;
 }
+.navbar-search-icon{
+    position: relative;
+}
+.navbar-search-icon .dot{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    min-height: 10px;
+    min-width: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+}
