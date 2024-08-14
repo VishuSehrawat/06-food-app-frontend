@@ -4,14 +4,17 @@ import {assets} from  '../../assets/assets.js'
 import {StoreContext} from '../../context/StoreContext'
 
 const FoodItem = ({ item }) => {
-  const{cartItems,setCartItems,addToCart,removeFromCart}=useContext(StoreContext)
-
+  const{cartItems,setCartItems,addToCart,removeFromCart,url}=useContext(StoreContext)
   const { _id, name, price, description, image } = item;
 
   return (
     <div key={_id} className="food-item">
       <div className="food-item-img-container">
-        <img className="food-item-image" src={image} alt="" />
+        <img
+          className="food-item-image"
+          src={url + "/images/" + image}
+          alt=""
+        />
 
         {cartItems[_id] ? (
           <div className="food-item-counter">
@@ -44,7 +47,7 @@ const FoodItem = ({ item }) => {
           <img src={assets.rating_starts} alt="" />
         </div>
         <div className="food-item-desc">{description}</div>
-        <div className="food-item-price">${price}</div>
+        <div className="food-item-price">₹{price}</div>
       </div>
     </div>
   );

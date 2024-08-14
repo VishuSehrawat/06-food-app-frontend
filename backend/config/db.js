@@ -6,6 +6,11 @@ export const connectDB = async () => {
       "mongodb+srv://vishuSehrawat:Vishu_Sehrawat7705@cluster0.r0yq5uh.mongodb.net/food-del"
     )
     .then(() => {
+
+
+
+
+      
       console.log("mongoose connected");
     });
 };
