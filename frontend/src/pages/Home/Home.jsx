@@ -6,9 +6,7 @@ import ExploreMenu from "../../Components/ExploreMenu/ExploreMenu";
 import FoodDisplay from "../../Components/foodDisplay/FoodDisplay";
 import AppDownload from "../../Components/appDownload/AppDownload";
 
-const home1 = () => {
-  console.log("something")
-}
+ 
 const Home = () => {
   const [category, setCategory] = useState("All");
 
